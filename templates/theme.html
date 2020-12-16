@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block main_content %}
+
+ <div class="theory">
+
+   <a class="nonblock nontext clip_frame grpelem" id="back" href="{% url 'main' %}"><img class="block" id="u1245_img" src="{% static 'images/back_arrow.png' %}" alt="back_arrow"/></a>
+   {% if check_level %}
+   <a class="nonblock nontext rounded-corners clearfix grpelem" id="u1255-4" href="{% url 'practice' theme_id %}">Тренировка</a>
+   <div class="clearfix grpelem" id="theory">
+       {% for them in theme %}
+       {{ them.theory | safe }}
+       {% endfor %}
+   </div>
+   {% else %}
+       <div class="clearfix grpelem" id="level_message">
+       <p>Вы еще не достигли нужного уровня! Возвращайтесь позже!</p>
+       </div>
+    {% endif %}
+ </div>
+{% endblock %}

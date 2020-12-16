@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+ <meta charset="UTF-8">
+ <title>{{ title }}</title>
+ <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+ <link href="{% static 'css/site_global.css' %}" rel="stylesheet" type="text/css"/>
+ <link href="{% static 'css/guest.css' %}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div class="clearfix borderbox" id="page">
+   <div class="clip_frame grpelem" id="u680">
+    <img class="block" id="u680_img" src="{% static 'images/fox.png' %}" alt="" data-heightwidthratio="1.1428571428571428" data-image-width="49" data-image-height="56"/>
+   </div>
+   <div class="clearfix grpelem" id="u110-4">
+    <p>FOXILINGO</p>
+   </div>
+   <div class="clearfix grpelem" id="pu116-4">
+    <div class="clearfix colelem" id="u116-4">
+     <p>Изучайте английский язык с нами.</p>
+    </div>
+    <a class="nonblock nontext transition rounded-corners clearfix colelem" id="u119-4" href="{% url 'registration' %}">Регистрация</a>
+    <a class="nonblock nontext rounded-corners clearfix colelem" id="u122-4" href="{% url 'login' %}">У меня уже есть аккаунт</a>
+    <div class="clearfix colelem" id="u690-4"><!-- content -->
+     <p>© 2020, «FOXILINGO»</p>
+    </div>
+   </div>
+  </div>
+</body>
+</html>

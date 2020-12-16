@@ -1,0 +1,234 @@
+.version.registration {
+	color: #0000E4;
+	background-color: #DE41DE;
+}
+
+#page {
+	z-index: 1;
+	min-height: 1070px;
+	border-width: 0px;
+	border-color: #000000;
+	width: 100%;
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #F5F5FA url("../images/e34092e75a7441cc12fed06a546c34b5.jpg?crc=3964119012") no-repeat left top;
+}
+
+#u1988 {
+	z-index: 32;
+	background-color: transparent;
+	-webkit-transform: matrix(-0.9998, -0.0175, 0.0175, -0.9998, 54, 54);
+	-ms-transform: matrix(-0.9998, -0.0175, 0.0175, -0.9998, 54, 54);
+	transform: matrix(-0.9998, -0.0175, 0.0175, -0.9998, 54, 54);
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 32px;
+	width: 2.82%;
+	left: 2.09%;
+}
+
+#u1988:hover {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C0278F;
+	min-height: 0px;
+	width: 2.82%;
+	margin: 31px -10001px -1px -0.052083333333333336%;
+}
+
+#u1989 {
+	z-index: 33;
+	display: block;
+	width: 100%;
+}
+
+#ppu525 {
+	z-index: 0;
+	margin-right: -10000px;
+	margin-top: 50px;
+	width: 19.38%;
+	margin-left: 39.85%;
+}
+
+#logout_text {
+	z-index: 0;
+	margin-top: 300px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+#pu525 {
+	z-index: 30;
+	width: 100%;
+}
+
+#u525 {
+	z-index: 30;
+	background-color: transparent;
+	-webkit-transform: matrix(0.9848, -0.1736, 0.1736, 0.9848, -4, 5);
+	-ms-transform: matrix(0.9848, -0.1736, 0.1736, 0.9848, -4, 5);
+	transform: matrix(0.9848, -0.1736, 0.1736, 0.9848, -4, 5);
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 4px;
+	width: 13.18%;
+	left: 1.08%;
+}
+
+#u526 {
+	z-index: 31;
+	display: block;
+	width: 100%;
+}
+
+#u399-4 {
+	z-index: 6;
+	min-height: 43px;
+	background-color: transparent;
+	font-size: 30px;
+	line-height: 36px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 14px;
+	width: 84.68%;
+	left: 15.33%;
+}
+
+#u400-4 {
+	z-index: 2;
+	min-height: 52px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #949498;
+	background-color: #EFF3F9;
+	border-radius: 15px;
+	line-height: 50px;
+	color: #949498;
+	font-size: 20px;
+	text-indent: 11px;
+	margin-top: 40px;
+	position: relative;
+	width: 84.68%;
+	margin-left: 9.68%;
+}
+
+#u401-4 {
+	z-index: 10;
+	min-height: 52px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #949498;
+	background-color: #EFF3F9;
+	border-radius: 15px;
+	line-height: 50px;
+	color: #949498;
+	font-size: 20px;
+	text-indent: 11px;
+	margin-top: 11px;
+	position: relative;
+	width: 84.68%;
+	margin-left: 9.68%;
+}
+
+#u417-4 {
+	z-index: 22;
+	min-height: 52px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #949498;
+	background-color: #EFF3F9;
+	border-radius: 15px;
+	line-height: 50px;
+	color: #949498;
+	font-size: 20px;
+	text-indent: 11px;
+	margin-top: 12px;
+	position: relative;
+	width: 84.68%;
+	margin-left: 9.68%;
+}
+
+#u418-4 {
+	z-index: 26;
+	min-height: 52px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #949498;
+	background-color: #EFF3F9;
+	border-radius: 15px;
+	line-height: 50px;
+	color: #949498;
+	font-size: 20px;
+	text-indent: 11px;
+	margin-top: 12px;
+	position: relative;
+	width: 84.68%;
+	margin-left: 9.68%;
+}
+
+#u402-4 {
+	z-index: 14;
+	min-height: 42px;
+	background-color: #FF54EA;
+	border-radius: 20px;
+	line-height: 50px;
+	color: #FFFFFF;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 22px;
+	position: relative;
+	width: 84.68%;
+	margin-left: 6%;
+}
+
+#u402-4:hover {
+	background-color: #DA00D8;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 42px;
+	width: 84.68%;
+}
+
+#u404-4 {
+	z-index: 18;
+	min-height: 42px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #949498;
+	background-color: #00A99D;
+	border-radius: 15px;
+	line-height: 43px;
+	color: #FFFFFF;
+	font-size: 15px;
+	text-align: center;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 28px;
+	width: 6.98%;
+	left: 91.15%;
+}
+
+#u404-4:hover {
+	background-color: #FF3694;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 42px;
+	width: 6.98%;
+	margin: 28px -10000px 0px 0%;
+}
+
+.css_verticalspacer .verticalspacer {
+	height: calc(100vh - 1069px);
+}
+
+#muse_css_mq,
+.html {
+	background-color: #FFFFFF;
+}
+
+body {
+	position: relative;
+	min-width: 320px;
+}

@@ -1,0 +1,40 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block main_content %}
+
+   <div class="position_content" id="page_position_content">
+    <a class="nonblock nontext clip_frame grpelem" id="back" href="{% url 'main' %}"><img class="block" id="u1245_img" src="{% static 'images/back_arrow.png' %}" alt="back_arrow"/>Назад</a>
+   {% if is_practice %}
+    <div class="clearfix colelem" id="u2153-4">
+        <p>Введите перевод на английский</p>
+        <p>{{ quest }}</p>
+    </div>
+    <form method="post">
+    {% csrf_token %}
+        <input name="answer_user" class="rounded-corners clearfix colelem" id="u2156-4" placeholder="Введите на английском...">
+        <p>count_quest</p><input name="count_quest" value="{{ count_quest }}">
+        <p>correct_answer</p><input name="correct_answer" value="{{ correct_answer }}">
+        <p>exp</p><input name="exp" value="{{ exp }}">
+        <div class="clearfix colelem" id="pu2159-4">
+         <button class="rounded-corners clearfix grpelem" id="u2159-4">Пропустить</button>
+         <button type="submit" class="rounded-corners clearfix grpelem" id="u2162-4">Проверить</button>
+        </div>
+    </form>
+   {% else %}
+        <div class="clearfix colelem" id="u2153-4">
+            <p>Поздравляем!</p>
+            <p>Результат: {{ correct_answer }} / {{ len_questions }} </p>
+            <p>Добавлено опыта: {{ exp }} </p>
+            {% if new_level %}
+            <p>Поздравляем с новым {{ new_level_congratulations }} уровнем!</p>
+            {% endif %}
+        </div>
+
+   {% endif %}
+   </div>
+{% endblock %}
+
+
+

@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+ <meta charset="UTF-8">
+ <title>{{ title }}</title>
+ <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+ <link href="{% static 'css/site_global.css' %}" rel="stylesheet" type="text/css"/>
+ <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css"/>
+ <link href="{% static 'css/authorization.css' %}" rel="stylesheet" type="text/css"/>
+ <link href="{% static 'css/registration.css' %}" rel="stylesheet" type="text/css"/>
+ <link href="{% static 'css/theme.css' %}" rel="stylesheet" type="text/css"/>
+ <link href="{% static 'css/theme-2.css' %}" rel="stylesheet" type="text/css"/>
+ <link href="{% static 'css/theme-3.css' %}" rel="stylesheet" type="text/css"/>
+ <link href="{% static 'css/theme-4.css' %}" rel="stylesheet" type="text/css"/>
+ <link href="{% static 'css/theme-5.css' %}" rel="stylesheet" type="text/css"/>
+ <link href="{% static 'css/theme-6.css' %}" rel="stylesheet" type="text/css"/>
+ <link href="{% static 'css/practice.css' %}" rel="stylesheet" type="text/css"/>
+ <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"  crossorigin="anonymous">
+</head>
+
+<body>
+    {% block content %}
+
+    {% endblock %}
+</body>
+
+

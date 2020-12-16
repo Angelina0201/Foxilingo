@@ -1,0 +1,71 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block main_content %}
+    <div class="clearfix colelem" id="ppu2003-4">
+    <div class="clearfix grpelem" id="pu2003-4">
+      <div class="clearfix colelem" id="u2003-4">
+       <p>Уровень 0</p>
+      </div>
+      <div class="clearfix colelem" id="u2015-4">
+       <p>Уровень 1</p>
+      </div>
+     </div>
+     <div class="clip_frame grpelem" id="u143">
+      <img class="block" id="u143_img" id="u2055-4" src="{% static 'images/base.png' %}" alt="base"/>
+     </div>
+     <div class="clearfix grpelem" id="u243-4">
+      <p>1.Основы</p>
+     </div>
+    <a class="nonblock nontext clearfix grpelem" id="u1258-3" href="{% url 'theme' 1 %}"></a>
+    </div>
+    <div class="clearfix colelem" id="ppu256"><!-- group -->
+     <div class="clearfix grpelem" id="pu256"><!-- group -->
+      <div class="clip_frame grpelem" id="u256"><!-- image -->
+       <img class="block" id="u256_img" src="{% static 'images/food.png' %}" alt="food"/>
+      </div>
+      <div class="clearfix grpelem" id="u296-4"><!-- content -->
+       <p>3.Еда</p>
+      </div>
+      <a class="nonblock nontext clearfix grpelem" id="u1610-3" href="{% url 'theme' 3 %}"></a>
+     </div>
+     <div class="clip_frame grpelem" id="u246"><!-- image -->
+      <img class="block" id="u246_img" src="{% static 'images/family.png' %}" alt="family"/>
+     </div>
+     <div class="clearfix grpelem" id="u299-4"><!-- content -->
+      <p>2.Семья</p>
+     </div>
+     <a class="nonblock nontext clearfix grpelem" id="u1486-3" href="{% url 'theme' 2 %}"></a>
+    </div>
+    <div class="clearfix colelem" id="u2018-4"><!-- content -->
+     <p>Уровень 2</p>
+    </div>
+    <div class="clearfix colelem" id="pu276"><!-- group -->
+     <div class="clip_frame grpelem" id="u276"><!-- image -->
+      <img class="block" id="u276_img" src="{% static 'images/letter.png' %}" alt="letter"/>
+     </div>
+     <div class="clearfix grpelem" id="u302-4"><!-- content -->
+      <p>4.Посчитаем</p>
+     </div>
+     <a class="nonblock nontext clearfix grpelem" id="u1737-3" href="{% url 'theme' 4 %}"></a>
+    </div>
+    <div class="clearfix colelem" id="ppu286"><!-- group -->
+     <div class="clearfix grpelem" id="pu286"><!-- group -->
+      <div class="clip_frame grpelem" id="u286"><!-- image -->
+       <img class="block" id="u286_img" src="{% static 'images/cat.png' %}" alt="animals"/>
+      </div>
+      <div class="clearfix grpelem" id="u305-4"><!-- content -->
+       <p>6.Животные</p>
+      </div>
+      <a class="nonblock nontext clearfix grpelem" id="u1985-3" href="{% url 'theme' 6 %}"></a>
+     </div>
+     <div class="clip_frame grpelem" id="u266"><!-- image -->
+      <img class="block" id="u266_img" src="{% static 'images/message.png' %}" alt="message"/>
+     </div>
+     <div class="clearfix grpelem" id="u308-4"><!-- content -->
+      <p>5.Фразы</p>
+     </div>
+     <a class="nonblock nontext clearfix grpelem" id="u1861-3" href="{% url 'theme' 5 %}"></a>
+    </div>
+{% endblock %}

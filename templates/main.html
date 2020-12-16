@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block content %}
+ <div class="clearfix borderbox" id="page"><!-- column -->
+    <div class="rounded-corners clearfix grpelem" id="u1202"><!-- column -->
+    <div class="clearfix colelem" id="pu1204"><!-- group -->
+     <div class="clip_frame grpelem" id="u1204"><!-- image -->
+      <img class="block" id="u1204_img" src="{% static 'images/fox.png' %}" alt="fox"/>
+     </div>
+     <div class="rounded-corners clearfix grpelem" id="u2028-7"><!-- content -->
+      {% for exp in experience %}
+      <p id="u2028-2">Уровень {{ exp.level }}</p>
+      <p id="u2028-4">{{ exp.current_experience }}\{{ exp.border_experience }}</p>
+      {% endfor %}
+     </div>
+    </div>
+    <div class="clearfix colelem" id="u1203-4"><!-- content -->
+     <p>Пройдите урок, чтоб пополнить знания!</p>
+    </div>
+   </div>
+   <div class="position_content" id="page_position_content">
+    <div class="clearfix colelem" id="pu137"><!-- group -->
+     <div class="browser_width grpelem" id="u137-bw">
+      <div id="u137"><!-- simple frame --></div>
+     </div>
+     <div class="clip_frame grpelem" id="u609" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- image -->
+      <img class="block" id="u609_img" src="{% static 'images/1.jpg' %}" alt="bh_header"/>
+     </div>
+     <div class="clearfix grpelem" id="u140-4"><!-- content -->
+      <p>{{ user_fullname }}</p>
+     </div>
+     <div class="clip_frame grpelem" id="u160"><!-- image -->
+      <img class="block" id="u160_img" src="{% static 'images/usa_flag.png' %}" alt="flag"/>
+     </div>
+     <a class="nonblock nontext MuseLinkActive clearfix grpelem" id="u2055-4" href="/">FOXILINGO</a>
+
+     <a class="reset nonblock nontext rounded-corners clearfix grpelem" id="reset" href="{% url 'password_change' %}">Сменить пароль</a>
+     <a class="reset nonblock nontext rounded-corners clearfix grpelem" id="logout" href="{% url 'logout' %}">Выйти</a>
+    </div>
+     {% block main_content %}
+
+    {% endblock %}
+   </div>
+  </div>
+ </div>
+{% endblock %}

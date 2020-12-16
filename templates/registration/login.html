@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% load crispy_forms_filters %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+  <div class="clearfix borderbox" id="auth"><!-- group -->
+   <div class="clearfix grpelem" id="ppu518"><!-- column -->
+    <div class="clearfix colelem" id="pu518"><!-- group -->
+     <div class="clip_frame grpelem" id="u518"><!-- svg -->
+      <img class="svg svg_mar" id="u514" src="{% static 'images/en_poster.png' %}" alt="en_poster"/>
+     </div>
+     <div class="clearfix grpelem" id="u378-4"><!-- content -->
+      <p>Вход</p>
+     </div>
+    </div>
+    <div class="clearfix grpelem">
+        <form method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+             <button type="submit" class="nonblock nontext clip_frame grpelem" id="u387-4">
+                 Войти
+             </button>
+        </form>
+    </div>
+   </div>
+   <a class="nonblock nontext rounded-corners clearfix grpelem" id="u396-4" href="{% url 'registration' %}">Регистрация</a>
+ </div>
+
+{% endblock %}
