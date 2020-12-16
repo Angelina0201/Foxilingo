@@ -219,3 +219,31 @@ body {
 	min-height: 39px;
 	text-decoration: none;
 }
+
+#go_main_btn {
+	z-index: 18;
+	min-height: 39px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #949498;
+	background-color: #ff5196;
+	border-radius: 15px;
+	line-height: 43px;
+	color: #FFFFFF;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	margin-top: 50px;
+	width: 60%;
+	right: 100%;
+	transform: translate(-50%, 0);
+
+}
+
+#go_main_btn:hover {
+	background-color: #ff3694;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 39px;
+	text-decoration: none;
+}

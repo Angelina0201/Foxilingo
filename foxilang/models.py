@@ -10,15 +10,6 @@ class User_Level(models.Model):
     border_experience = models.IntegerField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
-    def get_level(self):
-        return self.level
-
-    def get_current_experience(self):
-        return self.current_experience
-
-    def get_border_experience(self):
-        return self.border_experience
-
 
 class Theme(models.Model):
     name = models.CharField(max_length=50)

@@ -5,11 +5,12 @@
 {% block main_content %}
 
    <div class="position_content" id="page_position_content">
-    <a class="nonblock nontext clip_frame grpelem" id="back" href="{% url 'main' %}"><img class="block" id="u1245_img" src="{% static 'images/back_arrow.png' %}" alt="back_arrow"/>Назад</a>
+    <a class="nonblock nontext clip_frame grpelem" id="back" href="{% url 'theme' theme_id %}"><img class="block" id="u1245_img" src="{% static 'images/back_arrow.png' %}" alt="back_arrow"/></a>
    {% if is_practice %}
     <div class="clearfix colelem" id="u2153-4">
-        <p>Введите перевод на английский</p>
-        <p>{{ quest }}</p>
+        <p>Переведите слово!</p>
+        <br>
+        <p>«{{ quest }}»</p>
     </div>
     <form method="post">
     {% csrf_token %}
@@ -24,11 +25,10 @@
     </form>
    {% else %}
         <div class="clearfix colelem" id="u2153-4">
-            <p>Поздравляем!</p>
             <p>Результат: {{ correct_answer }} / {{ len_questions }} </p>
             <p>Добавлено опыта: {{ exp }} </p>
             {% if new_level %}
-            <p>Поздравляем с новым {{ new_level_congratulations }} уровнем!</p>
+            <p>Поздравляем с {{ new_level_congratulations }} уровнем!</p>
             {% endif %}
         </div>
 

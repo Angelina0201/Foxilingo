@@ -33,6 +33,8 @@ class RegistrationView(View):
             new_user = form.save()
             login(request, new_user)
             User_Level.objects.create(level=0, current_experience=0, border_experience=10, user=new_user)
+            for theme in Theme.objects.all():
+                Reward.objects.create(exp=theme.access_level + 1, theme_id=theme.id, user=new_user)
             return HttpResponseRedirect('/')
         else:
             context = {'title': 'Регистрация нового пользователя',
@@ -88,6 +90,7 @@ class PracticeView(View):
         context = {'title': 'Практика темы',
                    'user_fullname': get_header_name(request),
                    'experience': User_Level.objects.filter(user=request.user),
+                   'theme_id': theme_id,
                    'quest': quest[0],
                    'count_quest': 0,
                    'correct_answer': 0,
@@ -102,17 +105,18 @@ class PracticeView(View):
             len_quest = len(theme.questions.split(', '))
         for theme in Theme.objects.filter(id=theme_id):
             answers = theme.answers.split(', ')
-        print(quest)
-        print(len_quest)
+        for reward in Reward.objects.filter(theme_id=theme_id):
+            exp_theme = reward.exp
 
         if request.method == "POST":
             count_quest = int(request.POST.get('count_quest'))
             correct_answer = int(request.POST.get('correct_answer'))
             exp = int(request.POST.get('exp'))
             while True:
-                if request.POST.get('answer_user') == answers[count_quest]:
+                answer_user = request.POST.get('answer_user').strip().lower()
+                if answer_user == answers[count_quest]:
                     correct_answer += 1
-                    exp += 3
+                    exp = exp + exp_theme
                     print('Верно')
                 else:
                     print('Неверно')
@@ -170,13 +174,11 @@ def custom_handler500(request):
     return HttpResponse("Ошибка 500,либо что-то сломалось, либо вы зашли в не свои события!")
 
 
+# Вспомогательные функции
+
+
 def get_user_id(request):
     return User.objects.get(username=request.user.get_username())
-
-
-def get_user_level(request):
-    for user in User_Level.objects.filter(user=request.user):
-        return user.level
 
 
 def get_header_name(request):
