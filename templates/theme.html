@@ -8,11 +8,12 @@
 
    <a class="nonblock nontext clip_frame grpelem" id="back" href="{% url 'main' %}"><img class="block" id="u1245_img" src="{% static 'images/back_arrow.png' %}" alt="back_arrow"/></a>
    {% if check_level %}
-   <a class="nonblock nontext rounded-corners clearfix grpelem" id="u1255-4" href="{% url 'practice' theme_id %}">Тренировка</a>
+   <a class="nonblock nontext rounded-corners clearfix grpelem" id="practice_btn_header" href="{% url 'practice' theme_id %}">Тренировка</a>
    <div class="clearfix grpelem" id="theory">
        {% for them in theme %}
        {{ them.theory | safe }}
        {% endfor %}
+   <a class="nonblock nontext rounded-corners clearfix grpelem" id="practice_btn_bottom" href="{% url 'practice' theme_id %}">Тренировка</a>
    </div>
    {% else %}
        <div class="clearfix grpelem" id="level_message">

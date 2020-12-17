@@ -238,23 +238,42 @@
 	left: 20%;
 }
 
-#u1255-4 {
-	z-index: 140;
-	min-height: 38px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #7F7F7F;
-	background-color: transparent;
-	border-radius: 10px;
-	line-height: 34px;
-	color: #3065FF;
-	font-size: 18px;
-	text-align: center;
-	position: relative;
-	margin-right: 0px;
-	margin-top: 122px;
-	width: 9.95%;
-	left: 59.85%;
+#practice_btn_header{
+z-index: 140;
+min-height: 38px;
+border-style: solid;
+border-width: 1px;
+border-color: #7F7F7F;
+background-color: transparent;
+border-radius: 10px;
+line-height: 34px;
+color: #3065FF;
+font-size: 18px;
+text-align: center;
+position: relative;
+margin-right: 0px;
+margin-top: 122px;
+width: 9.95%;
+left: 59.85%;
+}
+
+#practice_btn_bottom {
+z-index: 140;
+min-height: 38px;
+border-style: solid;
+border-width: 1px;
+border-color: #7F7F7F;
+background-color: transparent;
+border-radius: 10px;
+line-height: 34px;
+color: #3065FF;
+font-size: 18px;
+text-align: center;
+position: relative;
+margin-right: 0px;
+margin-top: 0px;
+width: 17.95%;
+left: 41.85%;
 }
 
 #u1264 {

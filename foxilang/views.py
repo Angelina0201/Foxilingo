@@ -96,6 +96,7 @@ class PracticeView(View):
                    'correct_answer': 0,
                    'exp': 0,
                    'is_practice': True,
+                   'theme_id': theme_id,
                    }
         return render(request, 'practice.html', context=context)
 
@@ -117,9 +118,6 @@ class PracticeView(View):
                 if answer_user == answers[count_quest]:
                     correct_answer += 1
                     exp = exp + exp_theme
-                    print('Верно')
-                else:
-                    print('Неверно')
                 count_quest += 1
                 if len_quest == count_quest:
                     quest = None
@@ -133,6 +131,7 @@ class PracticeView(View):
                            'correct_answer': correct_answer,
                            'exp': exp,
                            'is_practice': True,
+                           'theme_id': theme_id,
                            }
                 if len_quest == count_quest:
                     break
@@ -145,6 +144,7 @@ class PracticeView(View):
                        'correct_answer': correct_answer,
                        'exp': exp,
                        'is_practice': False,
+                       'theme_id': theme_id,
                        }
             for usr in User_Level.objects.filter(user=get_user_id(request)):
                 current_experience = int(usr.current_experience)

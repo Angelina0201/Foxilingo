@@ -390,6 +390,8 @@
 }
 
 #u2153-4 {
+	font-family: "Comic Sans MS";
+	color: #9400B0;
 	z-index: 37;
 	min-height: 61px;
 	background-color: transparent;
@@ -428,15 +430,16 @@
 }
 
 #u2159-4 {
+	background: red;
+	font-family: "Comic Sans MS";
+	color: white;
 	z-index: 45;
 	min-height: 51px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #7F7F7F;
-	background-color: transparent;
 	border-radius: 15px;
 	line-height: 42px;
-	color: #7F7F7F;
 	font-size: 23px;
 	text-align: center;
 	margin-bottom: -1px;
@@ -448,15 +451,16 @@
 }
 
 #u2162-4 {
+	background: green;
+	font-family: "Comic Sans MS";
+	color: white;
 	z-index: 49;
 	min-height: 51px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #7F7F7F;
-	background-color: transparent;
 	border-radius: 15px;
 	line-height: 42px;
-	color: #7F7F7F;
 	font-size: 23px;
 	text-align: center;
 	margin-bottom: -1px;
